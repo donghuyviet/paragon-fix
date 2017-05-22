@@ -54,13 +54,81 @@
 				right: -700px;
 			}
 		}
+		// TOWER
+		.tower {
+			.title {
+				padding: 10px 0;
+				font: 30px 'Roboto Regular';
+			}
+			
+			.desc {
+				font: 15px 'Roboto Regular';
+			}
+			a {
+				position: relative;
+			    display: block;
+			    overflow: hidden;
+			    img {
+		    	    display: block;
+				    -webkit-transition: all .5s ease-in-out;
+				    transition: all .5s ease-in-out;
+			    }
+			}
+			.item-tower {
+				.title {
+					font: 13px 'Roboto Bold';
+				}
+			}
+		}& .tien-ich {
+			background-color: #0f3b22;
+			margin-top: 20px;
+			.title {
+				color: #ffffff;
+				padding-top: 20px;
+			}
+			.list-uiti {
+				padding-bottom: 20px;
+				.item-tower{
+				    display: inline-block;
+				    width: 49%;
+				}
+			}
+			a {
+				position: relative;
+			    display: block;
+			    overflow: hidden;
+			    .title {
+			    	position: absolute;
+				    border-bottom: 1px solid #ffffff;
+				    top: 50%;
+				    transform: translate(-50%,-50%);
+				    left: 50%;
+				    color: #fff;
+				    text-transform: uppercase;
+				    width: auto;
+				    text-align: center;
+			    }
+			}
+		}
+		.linebottom {
+		    background: url(../images/icons.png) no-repeat;
+		    width: 100%;
+		    left: 38%;
+		    background-position: 10px -130px;
+		    height: 20px;
+		    text-align: center;
+		    padding: 10px 0;
+		    position: relative;
+		}
 		// UITILITY 
 		.uitility {
 			margin-bottom: 10px;
 			border-bottom: 1px solid #333;
 			padding: 10px;
+			float: left;
+			width: 100%;
 			.title {
-				font: 30px 'Roboto Regular';
+				font: 25px 'Roboto Regular';
 				text-transform: uppercase;
 				color: #4fa74a;
 				padding-bottom: 10px;
@@ -85,6 +153,14 @@
 			    	color: #ffffff;
 			    }
 			}
+			.uiti-content {
+				margin-bottom: 30px;
+			}
+			.item-uiti {
+				.title {
+					font: 15px 'Roboto Regular';
+				}
+			}
 		}
 		.view {
 				text-transform: uppercase;
@@ -105,12 +181,19 @@
 		.position {
 			min-height: 200px;
 			margin-bottom: 10px;
+			float: left;
+			width: 100%; 
 			.zoom {
 				position: absolute;
 			    background: url(../images/sprite.png) no-repeat;
 			    width: 60px;
 			    height: 60px;
 			    background-position: -65px -21px;
+			    display: none;
+			}
+			.title {
+				padding-bottom: 10px;
+				font: 30px 'Roboto Regular';
 			}
 		}
 		.info-shophouse {
@@ -159,8 +242,9 @@
 		.news {
 			.item-news {
 				max-height: 80px;
-				margin-bottom: 10px;
-				width: 100%;
+			    margin-bottom: 10px;
+			    width: 100%;
+			    display: inline-block;
 				a {
 					color: #000;
 					font:  13px 'Roboto Medium';
@@ -633,7 +717,7 @@
 			margin-bottom: 10px;
 		    border-bottom: 0px solid #333;
 		    padding: 10px;
-		    width: 48%;
+		    width: 47%;
 		    float: left;
 			.title {
 				font: 30px 'Roboto Regular';
@@ -682,7 +766,8 @@
 			min-height: 200px;
 			margin-bottom: 10px;
 			float: left;
-			width: 50%;
+			width: 47%;
+			padding: 10px;
 			.zoom {
 				position: absolute;
 			    background: url(../images/sprite.png) no-repeat;
@@ -725,7 +810,7 @@
 			.item-news {
 			    max-height: 128px;
 			    margin-bottom: 30px;
-			    width: 50%;
+			    width: 49%;
 				a {
 					color: #000;
 					font:  13px 'Roboto Regular';
@@ -870,9 +955,6 @@
 	.logo {
 		// margin-right: 60px;
 	}
-	#header {
-		display: none;
-	}
 	.main {
 		max-width: 16000px;
 		height: 100%;
@@ -891,7 +973,158 @@
 			.uk-.dotnav {
 			}
 		}
-
+		.list-position {
+			.uitility {
+				margin-bottom: 10px;
+			    border-bottom: 0px solid #333;
+			    padding: 10px;
+			    width: 47%;
+			    float: left;
+				.title {
+					font: 30px 'Roboto Regular';
+					text-transform: uppercase;
+					color: #4fa74a;
+					padding-bottom: 10px;
+				}
+				.description  {
+					font: 16px 'Roboto Regular';
+					padding-bottom: 30px;
+				}
+				.view {
+					text-transform: uppercase;
+				    font: 16px 'Roboto Medium';
+				    width: 60%;
+				    height: 25px;
+				    background-color: #4fa74a;
+				    color: #ffffff;
+				    text-align: center;
+				    padding: 5px;
+				    border-radius: 20px;
+				    line-height: 1.5;
+				    margin: auto;
+				    a {
+				    	color: #ffffff;
+				    }
+				}
+			}
+			.view {
+					text-transform: uppercase;
+				    font: 16px 'Roboto Medium';
+				    width: 60%;
+				    height: 25px;
+				    background-color: #4fa74a;
+				    color: #ffffff;
+				    text-align: center;
+				    padding: 5px;
+				    border-radius: 20px;
+				    line-height: 1.5;
+				    margin: auto;
+				    a {
+				    	color: #ffffff;
+				    }
+				}
+			.position {
+				min-height: 200px;
+				margin-bottom: 10px;
+				float: left;
+				width: 47%;
+				padding: 10px;
+				.zoom {
+					position: absolute;
+				    background: url(../images/sprite.png) no-repeat;
+				    width: 60px;
+				    height: 60px;
+				    background-position: -65px -21px;
+				}
+			}
+		}
+		.vi-tri {
+			width: 50%;
+		}
+		// TOWER
+		.tower {
+			.title {
+				padding: 10px 0;
+				font: 30px 'Roboto Regular';
+			}
+			
+			.desc {
+				font: 15px 'Roboto Regular';
+			}
+			a {
+				position: relative;
+			    display: block;
+			    overflow: hidden;
+			    img {
+		    	    display: block;
+				    -webkit-transition: all .5s ease-in-out;
+				    transition: all .5s ease-in-out;
+			    }
+			}
+			.item-tower {
+				.title {
+					font: 15px 'Roboto Bold';
+				}
+			}
+			.item-tower:hover  {
+				.title {
+					font: 15px 'Roboto Bold';
+				}
+				img {
+					-webkit-transform: scale(1.1);
+				    transform: scale(1.1);
+				}
+				.title, .desc {
+					color: #cf000f;
+				}
+			}
+		}& .tien-ich {
+			background-color: #0f3b22;
+			margin-top: 20px;
+			.title {
+				color: #ffffff;
+				padding-top: 20px;
+			}
+			a:hover  {
+				.title{
+					display: none;
+				}
+			}
+			.list-uiti {
+				padding-bottom: 20px;
+				.item-tower{
+				    display: inline-block;
+				    width: 31.5%;
+				    padding: 10px;
+				}
+			}
+			a {
+				position: relative;
+			    display: block;
+			    overflow: hidden;
+			    .title {
+			    	position: absolute;
+				    border-bottom: 1px solid #ffffff;
+				    top: 50%;
+				    transform: translate(-50%,-50%);
+				    left: 50%;
+				    color: #fff;
+				    text-transform: uppercase;
+				    width: auto;
+				    text-align: center;
+			    }
+			}
+		}
+		.linebottom {
+		    background: url(../images/icons.png) no-repeat;
+		    width: 100%;
+		    left: 38%;
+		    background-position: 10px -130px;
+		    height: 20px;
+		    text-align: center;
+		    padding: 10px 0;
+		    position: relative;
+		}
 	// MENU LEFT
 		.menu-left {
 			display: block;
@@ -981,54 +1214,19 @@
 				}
 			}
 		}
-		.subscribe-icon {
-			    display: block;
-			    width: auto;
-			    height: 35px;
-			    position: absolute;
-			    display: inline-block;
-			    /* vertical-align: top; */
-			    margin: 0;
-			    background-color: #951E20;
-			    bottom: -70px;
-			    opacity: 1;
-			    z-index: 1;
-			    right: -35px;
-			    -webkit-transform: rotate(90deg);
-			    transform-origin: 100% -100%;
-    			transform: rotate(90deg);
-				
-		    a {
-	    	    width: auto;
-			    position: relative;
-			    display: inline-block;
-			    padding: 0 15px 0 40px;
-			    font-weight: 400;
-			    font: 20px 'Roboto Regular';
-			    line-height: 35px;
-			    color: #fff;
-			    vertical-align: middle;
-		    }
-		    a:hover {
-		    	text-decoration: none;
-		    }
-		    .subcribe {
-	    	    background: url(../images/sprite.png) no-repeat;
-			    width: 35px;
-			    height: 35px;
-			    background-position: -132px -28px;
-			    position: absolute;
-			    display: block;
-			    z-index: 1;
-			    transform: rotate(-180deg);
+		// NEWS
+		.news {
+		    margin: 20px 0;
+		    .title {
+		    	font: 30px 'Roboto Regular';
+		    	margin-bottom: 20px;
 		    }
 		}
-	    .subscribe-icon :hover {
-	    	background-color: #b10808;
-	    	a {
-	    		padding: 0 15px 0 40px;
-	    	}
-	    }
+		.list-register {
+			.title {
+				font: 30px 'Roboto Regular';
+			}
+		}
 	    // HOT LINE 
 	    .hotline {
 	    	display: block;
@@ -1478,7 +1676,35 @@
     		width: 50%;
     	}
 	}
-	
+	// footer
+		.footer {
+			background-color: #4c4c4c;
+			min-height: 150px;
+			ul li {
+			    display: inline-block;
+				width: auto;
+				text-align: left;
+				border-bottom: 1px solid #757575;
+				padding: 5px;
+				font: 15px 'Roboto Regular';
+				a {
+					color: #ffffff;
+					font: 14px 'Roboto Regular';
+				}
+			ul li.uk-active {
+				background-color: #cf000f;
+			}
+			}
+		ul.info {
+		    border-top: 1px solid #cf000f;
+			padding: 10px 0 10px 10px ;
+			li {
+				border-bottom: 1px solid #757575;
+				width: 100%;
+				padding: 10px 0;
+			}
+		}
+		}
 	
 	//---------------------------------------------
 	// Hook Mixins Render
@@ -1494,9 +1720,6 @@
 	}
 	.logo {
 		margin-right: 60px;
-	}
-	#header {
-		display: none;
 	}
 	.uk-container {
 		max-width: 16000px;
