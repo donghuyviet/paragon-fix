@@ -57,34 +57,6 @@ a:hove {
 .uk-modal-dialog {
 	width: 1000px;
 }
-.uk-modal-dialog.form-summit {
-	background-color: #951e20;
-	width: 600px;
-	padding: 20px;
-	.title {
-		font: 20px 'Roboto Regular';
-		color: #ffffff;
-		text-transform: uppercase;
-		padding-bottom: 20px;
-	}
-	.uk-form input {
-	    width: 100%;
-	    height: 40px;
-	}
-	.uk-form textarea {
-		width: 100%;
-		height: 100px;
-	}
-	.sumit-form {
-		right: 10%;
-		padding: 20px 0;
-		a {
-			font: 20px 'Roboto Bold';
-			text-transform: uppercase;
-			padding: 0 10px;
-		}
-	}
-}
 // #MODULE: MODULE STYLE
 // -------------------------------------
 .uk-navbar-content,
@@ -93,6 +65,29 @@ a:hove {
 	text-shadow: none;
 }
 // header
+.uk-navbar-attached {
+	background: #951e20;
+	height: 60px;
+	.uk-navbar-nav li a {
+		text-transform: uppercase;
+		font: 15px 'Roboto Regular'; 
+		line-height: 4;
+	}
+	.uk-navbar-nav li.uk-active a {
+		background-color: rgb(149, 30, 32);
+		border-left-color: rgba(149, 30, 32, 0);
+  		border-right-color: rgba(149, 30, 32, 0); 
+   		border-top-color: rgba(149, 30, 32, 0); 
+   		border-bottom: 2px solid #ecb849;
+   	}
+   	.uk-navbar-nav li:hover a, .uk-navbar-nav li a:focus{
+		background-color: rgb(149, 30, 32);
+		border-left-color: rgba(149, 30, 32, 0);
+  		border-right-color: rgba(149, 30, 32, 0); 
+   		border-top-color: rgba(149, 30, 32, 0); 
+   		border-bottom: 2px solid #ecb849;
+   	}
+}
 .uk-navbar.navbar-top {
     background-color: #666;
 	.box-shadow(0 2px 5px 0 rgba(0, 0, 0, .2));
